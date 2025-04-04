@@ -22,6 +22,7 @@ async function run(): Promise<void> {
       const comments = resp.data.filter(
         it => it.user?.login === userName && it.body?.match(bodyRegex)
       )
+      console.log("@@@", comments)
 
       for (const comment of comments) {
         console.log(
