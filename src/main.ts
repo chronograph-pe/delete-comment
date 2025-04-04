@@ -2,6 +2,7 @@ import * as core from '@actions/core'
 import * as github from '@actions/github'
 
 async function run(): Promise<void> {
+  core.info("###### test"
   console.log(
     `starting process for ${github.context.repo.owner}/${github.context.repo.repo}`
   )
