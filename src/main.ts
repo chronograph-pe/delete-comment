@@ -5,6 +5,7 @@ async function run(): Promise<void> {
   console.log(
     `starting process for ${github.context.repo.owner}/${github.context.repo.repo}`
   )
+  console.log('test %%%%%')
   try {
     const token: string = core.getInput('github_token')
     const userName: string = core.getInput('delete_user_name')
